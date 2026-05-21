@@ -498,7 +498,6 @@ export default function App() {
     <div className="app">
       <Hero />
       <InvitationSection />
-      // <MehndiSection />
       <BaratSection />
       <Closing />
     </div>
