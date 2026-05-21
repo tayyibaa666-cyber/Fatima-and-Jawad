@@ -308,74 +308,74 @@ function InvitationSection() {
   );
 }
 
-// ─── MEHNDI SECTION ───────────────────────────────────────────────────────────
-function MehndiSection() {
-  return (
-    <section className="section mehndi-section">
-      <div className="section-bg" style={{ backgroundImage: "url(/img3-vintage.png)" }} />
-      <div className="section-overlay cream-overlay" />
+// // ─── MEHNDI SECTION ───────────────────────────────────────────────────────────
+// function MehndiSection() {
+//   return (
+//     <section className="section mehndi-section">
+//       <div className="section-bg" style={{ backgroundImage: "url(/img3-vintage.png)" }} />
+//       <div className="section-overlay cream-overlay" />
 
-      <div className="event-card mehndi-card">
-        <Reveal delay={0.1}>
-          <div className="event-icon-big"><Icons.Leaf /></div>
-          <p className="event-eyebrow">You are cordially invited to the</p>
-          <h2 className="event-title">Rasm-e-Hina</h2>
-          <p className="event-name-of">of Fatima Batool</p>
-        </Reveal>
+//       <div className="event-card mehndi-card">
+//         <Reveal delay={0.1}>
+//           <div className="event-icon-big"><Icons.Leaf /></div>
+//           <p className="event-eyebrow">You are cordially invited to the</p>
+//           <h2 className="event-title">Rasm-e-Hina</h2>
+//           <p className="event-name-of">of Fatima Batool</p>
+//         </Reveal>
 
-        <Reveal delay={0.3}>
-          <Divider />
-        </Reveal>
+//         <Reveal delay={0.3}>
+//           <Divider />
+//         </Reveal>
 
-        <Reveal delay={0.45}>
-          <div className="event-details">
-            <DetailRow icon={<Icons.Calendar />} label="Date" value="Thursday, 28th May 2026" />
-            <DetailRow icon={<Icons.Star />} label="Event" value="Mehndi" />
-            <DetailRow icon={<Icons.Clock />} label="Time" value="7:00 PM" />
-            <DetailRow
-              icon={<Icons.MapPin />}
-              label="Venue"
-              value={
-                <span style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                  <span>Noor Mehal Marriage Hall</span>
-                  <span className="venue-address">Near Nadra Office, Bosan Road, Multan</span>
-                  <a
-                    href="https://www.google.com/maps?q=6FRM+C62+Noor+Mehal+Marriage+And+Events+Hall,+Sabza+Zar+Rd+N,+New+Sabzazar+Colony,+Multan,+Pakistan"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="map-btn"
-                  >
-                    <span className="map-btn-icon"><Icons.MapPin /></span>
-                    View on Google Maps
-                  </a>
-                </span>
-              }
-            />
-          </div>
-        </Reveal>
+//         <Reveal delay={0.45}>
+//           <div className="event-details">
+//             <DetailRow icon={<Icons.Calendar />} label="Date" value="Thursday, 28th May 2026" />
+//             <DetailRow icon={<Icons.Star />} label="Event" value="Mehndi" />
+//             <DetailRow icon={<Icons.Clock />} label="Time" value="7:00 PM" />
+//             <DetailRow
+//               icon={<Icons.MapPin />}
+//               label="Venue"
+//               value={
+//                 <span style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+//                   <span>Noor Mehal Marriage Hall</span>
+//                   <span className="venue-address">Near Nadra Office, Bosan Road, Multan</span>
+//                   <a
+//                     href="https://www.google.com/maps?q=6FRM+C62+Noor+Mehal+Marriage+And+Events+Hall,+Sabza+Zar+Rd+N,+New+Sabzazar+Colony,+Multan,+Pakistan"
+//                     target="_blank"
+//                     rel="noreferrer"
+//                     className="map-btn"
+//                   >
+//                     <span className="map-btn-icon"><Icons.MapPin /></span>
+//                     View on Google Maps
+//                   </a>
+//                 </span>
+//               }
+//             />
+//           </div>
+//         </Reveal>
 
-        <Reveal delay={0.65}>
-          <div className="event-footer-deco">
-            <Icons.Flower />
-          </div>
-        </Reveal>
+//         <Reveal delay={0.65}>
+//           <div className="event-footer-deco">
+//             <Icons.Flower />
+//           </div>
+//         </Reveal>
 
-      </div>
-    </section>
-  );
-}
+//       </div>
+//     </section>
+//   );
+// }
 
-function DetailRow({ icon, label, value }) {
-  return (
-    <div className="event-detail-row">
-      <span className="detail-icon-el">{icon}</span>
-      <div className="detail-text">
-        <p className="detail-label">{label}</p>
-        <p className="detail-value">{value}</p>
-      </div>
-    </div>
-  );
-}
+// function DetailRow({ icon, label, value }) {
+//   return (
+//     <div className="event-detail-row">
+//       <span className="detail-icon-el">{icon}</span>
+//       <div className="detail-text">
+//         <p className="detail-label">{label}</p>
+//         <p className="detail-value">{value}</p>
+//       </div>
+//     </div>
+//   );
+// }
 
 // ─── BARAT SECTION ────────────────────────────────────────────────────────────
 function BaratSection() {
@@ -498,7 +498,7 @@ export default function App() {
     <div className="app">
       <Hero />
       <InvitationSection />
-      <MehndiSection />
+      // <MehndiSection />
       <BaratSection />
       <Closing />
     </div>
